@@ -1,3 +1,6 @@
+//Declaramos un objeto llamado Math
+const Math = {};
+
 function sumar(x1, x2) {
     return x1 + x2;
 }
@@ -18,4 +21,11 @@ function dividir(x1, x2) {
     }
 }
 
-exports.sumar = sumar
+//Agregamos las funciones al objeto Math
+Math.sumar = sumar;
+Math.restar = restar;
+Math.multiplicar = multiplicar;
+Math.dividir =dividir;
+
+//Exportamos el modulo que ya contiene las funciones
+module.exports = Math;

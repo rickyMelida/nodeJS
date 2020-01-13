@@ -1,3 +1,4 @@
+//importamos el modulo file system para el manejo de archivos
 const fs = require('fs');
 
 //Con este metodo creamos un nuevo archivo
